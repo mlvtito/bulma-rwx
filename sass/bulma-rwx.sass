@@ -1,18 +1,11 @@
-// 1. Import the initial variables
 @import "./node_modules/bulma/sass/utilities/initial-variables"
 
-// 2. Set your own initial variables
 $blue-rwx: #283C54
 $brown-rwx: #544028
 
-// 3. Set the derived variables
 $primary: $blue-rwx
-// $primary-invert: $pink-invert
-
-// 4. Import the rest of Bulma
 @import "./node_modules/bulma/bulma"
 
-// style="position: fixed; width: 100%; z-index:5;"
 .nav.rwx
   background-color: $blue-rwx
   color: $white
@@ -43,13 +36,3 @@ $primary: $blue-rwx
       background-color: $blue-rwx;
       a.nav-item:hover
         background-color: $brown-rwx;
-
-// This is the code to have menu on half of the screen (@media is generated with +mobile in sass)
-// @media screen and (max-width: 768px) {
-// .nav-right.nav-menu.is-active {
-//   width: 40%;
-//   margin-left:auto; // does not work with sass
-//   margin-right:0;
-//   min-height: 100vh;
-// }
-// }
