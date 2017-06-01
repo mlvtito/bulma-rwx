@@ -12,3 +12,44 @@ $primary: $blue-rwx
 // 4. Import the rest of Bulma
 @import "./node_modules/bulma/bulma"
 
+// style="position: fixed; width: 100%; z-index:5;"
+.nav.rwx
+  background-color: $blue-rwx
+  color: $white
+  z-index: 100;
+  &.fixed
+    position: fixed;
+    width: 100%;
+  a.nav-item
+    color: $white;
+    &.is-tab
+      border-bottom: 4px solid transparent;
+      border-top: 4px solid transparent;
+      &:hover
+        border-bottom: 4px solid $brown-rwx;
+      &.is-active
+        border-color: $brown-rwx;
+        background-color: $brown-rwx;
+    .title
+      color: $white;
+      font-family: Helvetica,Arial,sans-serif;
+  .nav-toggle 
+    &:hover
+      background-color: $brown-rwx;
+    span
+      background-color: $white;
+  +mobile
+    .nav-menu.is-active
+      background-color: $blue-rwx;
+      a.nav-item:hover
+        background-color: $brown-rwx;
+
+// This is the code to have menu on half of the screen (@media is generated with +mobile in sass)
+// @media screen and (max-width: 768px) {
+// .nav-right.nav-menu.is-active {
+//   width: 40%;
+//   margin-left:auto; // does not work with sass
+//   margin-right:0;
+//   min-height: 100vh;
+// }
+// }
