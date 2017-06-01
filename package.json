@@ -8,7 +8,7 @@
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
     "build-autoprefix": "postcss --use autoprefixer --output css/bulma-rwx.css css/bulma-rwx.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true bulma-rwx.sass css/bulma-rwx.css"
+    "build-sass": "node-sass --output-style expanded --source-map true sass/bulma-rwx.sass css/bulma-rwx.css"
   },
   "author": "",
   "license": "ISC",
