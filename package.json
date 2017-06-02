@@ -1,7 +1,8 @@
 {
   "name": "bulma-rwx",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Customized Bulma with r-w-x colors",
+  "author": "Arnaud Fonce <arnaud.fonce@r-w-x.net> (http://blog.r-w-x.net)",
   "main": "bulma-rwx.sass",
   "style": "bulma/css/bulma-rwx.css",
   "scripts": {
@@ -10,8 +11,14 @@
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true sass/bulma-rwx.sass css/bulma-rwx.css"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
   "dependencies": {
     "bulma": "^0.4.2"
   },
