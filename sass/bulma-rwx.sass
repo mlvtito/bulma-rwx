@@ -1,12 +1,13 @@
 @import "./node_modules/bulma/sass/utilities/initial-variables"
 
 $blue-rwx: #283C54
+$blend-rwx: #1B2838
 $brown-rwx: #544028
 
 $primary: $blue-rwx
 @import "./node_modules/bulma/bulma"
 
-.nav
+.nav.rwx
   background-color: $blue-rwx
   color: $white
   &.fixed
@@ -14,13 +15,27 @@ $primary: $blue-rwx
     width: 100%
     z-index: 15
   a.nav-item
-    color: $white
+    color: grey
+    &:hover
+      color: $white
+      background-color: darken($blue-rwx, 5%)
+    &.is-active
+      background-color: $brown-rwx
+      color: $white
+    &.brand
+      border-color: $blue-rwx
+      background-color: $blue-rwx
+      &:hover
+        border-color: $blue-rwx
+        background-color: $blue-rwx
     &.is-tab
       border-bottom: 4px solid transparent
       border-top: 4px solid transparent
-      &:hover
-        border-bottom: 4px solid $brown-rwx
       &.is-active
+        border-bottom: 4px solid $brown-rwx
+        color: $white
+        background-color: $blue-rwx
+      &.brand
         border-color: $brown-rwx
         background-color: $brown-rwx
     .title
