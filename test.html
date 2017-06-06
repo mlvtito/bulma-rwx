@@ -26,21 +26,23 @@
 
     <body>
         <nav class="nav fixed has-shadow rwx">
+            <div class="container">
                 <div class="nav-left">
                     <a class="nav-item is-tab brand">
                         <span class="title is-5">R-w-X Bulma Theme</span>
                     </a>
-                    <a class="nav-item is-tab">Home</a>
-                    <a class="nav-item is-tab is-active">Demo Page</a>
                 </div>
                 <div class="nav-center">
-                    <a class="nav-item is-tab" href="https://backend.r-w-x.net/scm/bulma/bulma-rwx" target="git">
+                    <a class="nav-item" href="https://backend.r-w-x.net/scm/bulma/bulma-rwx" target="git">
                         <span class="icon"> <i class="fa fa-git"></i> </span>
                     </a>
                 </div>
                 <span class="nav-toggle"><span></span><span></span><span></span></span>
                 <div class="nav-right nav-menu">
+                    <a class="nav-item">Home</a>
+                    <a class="nav-item is-active">Demo Page</a>
                 </div>
+            </div>
         </nav>
         <nav class="nav rwx">
             <div class="container">
@@ -51,8 +53,8 @@
                 </div>
             </div>
         </nav>
-        <div class="columns">
-            <div class="column is-2" style="height: 100vh; overflow-y: scroll; position: fixed;">
+        <div class="columns is-mobile">
+            <div class="column is-2 is-hidden-mobile" style="height: 100vh; overflow-y: scroll; position: fixed;">
                 <aside class="menu section" style="padding-top: 0.5em;">
                     <p class="menu-label"> Elements </p>
                     <ul class="menu-list">
@@ -131,7 +133,7 @@
                     </ul>
                 </aside>
             </div>
-            <div class="column is-2"></div>
+            <div class="column is-2 is-hidden-mobile"></div>
             <div class="column">
                 <section class="section" id="typography">
                     <h1 class="title"> Typography </h1>
