@@ -20,9 +20,9 @@
     "framework"
   ],
   "dependencies": {
-    "bulma": "^0.4.2"
   },
   "devDependencies": {
+    "bulma": "^0.4.2",
     "autoprefixer": "^7.1.1",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.0.0",
