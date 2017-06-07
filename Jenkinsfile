@@ -13,7 +13,13 @@ node {
 
     stage('Build CSS') {
       sh "npm run build"
+      lastPublishedVersion = sh (
+        script: 'npm view bulma-rwx version',
+        returnStdout: true
+      ).trim()
+      echo "Last published version is " + lastPublishedVersion
     }
+    
   }
 }
 
