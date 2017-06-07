@@ -6,6 +6,8 @@ $blend-rwx: #1B2838
 $brown-rwx: #544028
 
 $primary: $blue-rwx
+$family-sans-serif: Ubuntu,Arial,Helvetica,sans-serif
+
 @import "./node_modules/bulma/bulma"
 
 .nav.rwx
@@ -26,10 +28,11 @@ $primary: $blue-rwx
     &.brand
       border-color: $blue-rwx
       background-color: $blue-rwx
-      color: black
+      color: lightgray
       &:hover
         border-color: $blue-rwx
         background-color: $blue-rwx
+        color: white
     &.is-tab
       border-bottom: 4px solid transparent
       border-top: 4px solid transparent
@@ -40,9 +43,13 @@ $primary: $blue-rwx
       &.brand
         border-color: $brown-rwx
         background-color: $brown-rwx
-        color: black
+        color: lightgray
+        &:hover
+          color: white
     .title
       color: inherit
+      font-weight: 700
+      font-size: 1.05em
   .nav-toggle 
     &:hover
       background-color: $brown-rwx
