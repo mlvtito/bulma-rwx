@@ -13,16 +13,16 @@ node {
 
     stage('Build CSS') {
       sh "npm run build"
-      lastPublishedVersion = sh (
-        script: 'npm view bulma-rwx version',
-        returnStdout: true
-      ).trim()
+      lastPublishedVersion = sh(script: 'npm view bulma-rwx version', returnStdout: true).trim()
+      currentVersion = sh(script: 'npm version | grep bulma-rwx | cut -d "'" -f 4', returnStdout: true).trim()
       echo "Last published version is " + lastPublishedVersion
+      echo "Current version is " + currentVersion
     }
     
   }
 }
 
+if( lastPublishedVersion != currentVersion ) {
 stage('Publish to NPM') {
   timeout(time:5, unit:'DAYS') {
     input 'Should we deliver this version ?'
@@ -32,5 +32,6 @@ stage('Publish to NPM') {
       sh "npm publish"
     }
   }
+}
 }
 
