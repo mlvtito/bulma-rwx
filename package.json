@@ -10,7 +10,7 @@
     "build-autoprefix": "postcss --use autoprefixer --output css/bulma-rwx.css css/bulma-rwx.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true sass/bulma-rwx.sass css/bulma-rwx.css",
-    "build-site": "mkdir -p dist && ./node_modules/bestzip/bin/cli.js dist/site.zip *.html css",
+    "build-site": "mkdir -p dist && ./node_modules/bestzip/bin/cli.js dist/bulma-rwx-site-$npm_package_version.zip *.html css bulma-rwx.png",
     "preversion": "echo $(npm version | grep bulma-rwx | cut -d \"'\" -f 4) > .version",
     "postversion": "replace \"$(cat .version)\" \"$npm_package_version\" *.html && rm -f .version"
   },
