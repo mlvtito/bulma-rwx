@@ -13,7 +13,7 @@
         <nav class="nav fixed has-shadow rwx">
             <div class="container">
                 <div class="nav-left">
-                    <a class="nav-item is-tab brand">
+                    <a class="nav-item is-tab brand" href="index.html">
                         <span class="title is-5">r-w-x bulma theme</span>
                     </a>
                 </div>
@@ -24,8 +24,9 @@
                 </div>
                 <span id="main-toggle" class="nav-toggle"><span></span><span></span><span></span></span>
                 <div id="main-menu" class="nav-right nav-menu">
-                    <a class="nav-item">Home</a>
-                    <a class="nav-item is-active">Demo Page</a>
+                    <a class="nav-item" href="index.html">Home</a>
+                    <a class="nav-item is-active">Demo</a>
+                    <!--<a class="nav-item" href="docs.html">Documentation</a>-->
                 </div>
             </div>
         </nav>
@@ -2666,6 +2667,27 @@
                         </ul>
                     </div>
                 </section>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="content has-text-centered is-primary">
+                            <p><small>
+                                    <strong>r-w-x bulma theme</strong> by 
+                                    <a href="http://blog.r-w-x.net" target="blog"
+                                       style="text-decoration: underline;">Arnaud Fonce</a>
+                                    <br>
+                                    Based on <a href="http://bulma.io/" target="bulma" 
+                                                style="text-decoration: underline;">Bulma</a>.
+                                    Icons from <a href="http://fontawesome.io" target="fontawesome" 
+                                                  style="text-decoration: underline;">Font Awesome</a>.
+                                    <br>
+                                    Web Fonts from <a href="https://fonts.google.com/" target="gfont" 
+                                                      style="text-decoration: underline;">Google</a>.
+                                    Demo page from <a href="https://jenil.github.io/bulmaswatch/" target="bulmaswatch" 
+                                                      style="text-decoration: underline;">Bulmaswatch</a>
+                                </small></p>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
         <script crossorigin="anonymous" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" src="https://code.jquery.com/jquery-3.1.1.min.js">
@@ -2675,8 +2697,8 @@
                 $('.modal-background, .modal-close').click(function () {
                     $(this).parent().removeClass('is-active');
                 });
-                
-                $('#main-toggle').click(function() {
+
+                $('#main-toggle').click(function () {
                     $('#main-menu').toggleClass('is-active');
                 });
             });

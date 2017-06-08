@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> r-w-x bulma theme </title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/bulma-rwx.css" id="stylesheet" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    </head>
+    <body>
+        <nav class="nav fixed has-shadow rwx">
+            <div class="container">
+                <div class="nav-left">
+                    <a class="nav-item is-tab brand">
+                        <span class="title is-5">r-w-x bulma theme</span>
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <a class="nav-item" href="https://backend.r-w-x.net/scm/bulma/bulma-rwx" target="git">
+                        <span class="icon"> <i class="fa fa-git"></i> </span>
+                    </a>
+                </div>
+                <span id="main-toggle" class="nav-toggle"><span></span><span></span><span></span></span>
+                <div id="main-menu" class="nav-right nav-menu">
+                    <a class="nav-item is-active">Home</a>
+                    <a class="nav-item" href="demo.html">Demo</a>
+                    <!--<a class="nav-item" href="docs.html">Documentation</a>-->
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-fullheight has-text-centered">
+            <div class="hero-body">
+                <div class="container">
+                    <div>
+                        <svg width="240px" height="240px" viewBox="0 0 480 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="#283C54" fill-rule="evenodd">
+                        <polygon id="BluePath" points="136 296 156 156 236 76 336 176 276 236"></polygon>
+                        </g>
+                        <g stroke="none" stroke-width="1" fill="#544028" fill-rule="evenodd">
+                        <polygon id="BrownPath" points="136 296 276 236 356 316 236 396"></polygon>
+                        </g>
+                        </svg>
+                    </div>
+                    <h1 class="title">
+                        r-w-x bulma theme
+                    </h1>
+                    <h2 class="subtitle">
+                        a theme based on <a href="http://bulma.io/" target="bulma" style="text-decoration: underline;">Bulma</a> 
+                        CSS framework
+                    </h2>
+                    <pre style="display: inline;"><code class="bash" style="display: inline;">npm install bulma-rwx</code></pre>
+                    <br><br>
+                    <a class="button is-primary is-outlined" 
+                       href="https://registry.npmjs.org/bulma-rwx/-/bulma-rwx-0.1.0.tgz">
+                        <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
+                    </a>
+                    <a class="button is-primary is-outlined" href="http://bulma.io/documentation/overview/start/" target="bulma">
+                        <span class="icon"><i class="fa fa-book"></i></span><span>Bulma Docs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <footer class="footer">
+                    <div class="container">
+                        <div class="content has-text-centered is-primary">
+                            <p><small>
+                                    <strong>r-w-x bulma theme</strong> by 
+                                    <a href="http://blog.r-w-x.net" target="blog"
+                                       style="text-decoration: underline;">Arnaud Fonce</a>
+                                    <br>
+                                    Based on <a href="http://bulma.io/" target="bulma" 
+                                                style="text-decoration: underline;">Bulma</a>.
+                                    Icons from <a href="http://fontawesome.io" target="fontawesome" 
+                                                  style="text-decoration: underline;">Font Awesome</a>.
+                                    <br>
+                                    Web Fonts from <a href="https://fonts.google.com/" target="gfont" 
+                                                      style="text-decoration: underline;">Google</a>.
+                                    Demo page from <a href="https://jenil.github.io/bulmaswatch/" target="bulmaswatch" 
+                                                      style="text-decoration: underline;">Bulmaswatch</a>
+                                </small></p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+        <script crossorigin="anonymous" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" src="https://code.jquery.com/jquery-3.1.1.min.js">
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('.modal-background, .modal-close').click(function () {
+                    $(this).parent().removeClass('is-active');
+                });
+
+                $('#main-toggle').click(function () {
+                    $('#main-menu').toggleClass('is-active');
+                });
+            });
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>
