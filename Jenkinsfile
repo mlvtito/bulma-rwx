@@ -3,7 +3,7 @@ node {
   withEnv(["PATH=${tool 'NodeJS_4.6.0'}/bin:${PATH}"]) {
     stage('Preparation') {
       deleteDir()
-      git 'https://localhost/scm/git/bulma/bulma-rwx.git'
+      git 'https://backend.r-w-x.net/scm/git/bulma/bulma-rwx.git'
       sh "node -v && npm -v"
     }
 
