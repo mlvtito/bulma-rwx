@@ -3,7 +3,9 @@ node {
   withEnv(["PATH=${tool 'NodeJS_4.6.0'}/bin:${PATH}"]) {
     stage('Preparation') {
       deleteDir()
-      git 'https://backend.r-w-x.net/scm/git/bulma/bulma-rwx.git'
+      sh "ls -l /home/jenkins/.ssh"
+      sh "cat /home/jenkins/.ssh/id_rsa.pub"
+      git 'ssh://git@localhost:29418/bulma/bulma-rwx.git'
       sh "node -v && npm -v"
     }
 
