@@ -6,10 +6,11 @@
   "main": "bulma-rwx.sass",
   "style": "bulma/css/bulma-rwx.css",
   "scripts": {
-    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-site",
     "build-autoprefix": "postcss --use autoprefixer --output css/bulma-rwx.css css/bulma-rwx.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true sass/bulma-rwx.sass css/bulma-rwx.css"
+    "build-sass": "node-sass --output-style expanded --source-map true sass/bulma-rwx.sass css/bulma-rwx.css",
+    "build-site": "mkdir -p dist && ./node_modules/bestzip/bin/cli.js dist/site.zip *.html css"
   },
   "license": "MIT",
   "keywords": [
@@ -19,11 +20,11 @@
     "responsive",
     "framework"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "bulma": "^0.4.2",
     "autoprefixer": "^7.1.1",
+    "bestzip": "^1.1.4",
+    "bulma": "^0.4.2",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.0.0",
     "rimraf": "^2.6.1"
