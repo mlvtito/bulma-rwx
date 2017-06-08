@@ -7,21 +7,6 @@
         <meta name="viewport" content="width=device-width, minimum-scale=1.0">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
         <link href="css/bulma-rwx.css" id="stylesheet" rel="stylesheet" type="text/css" />
-<!--        <style type="text/css">
-            .control .control,
-            .control .help,
-            .control.has-addons,
-            .control.is-grouped,
-            .control.is-horizontal,
-            .control-label,
-            :not(.field)>.control {
-                background-color: red;
-                box-shadow: 3px 3px 3px 3px red;
-            }
-            .hero .container {
-                width: 95%;
-            }
-        </style>-->
     </head>
 
     <body>
@@ -37,8 +22,8 @@
                         <span class="icon"> <i class="fa fa-git"></i> </span>
                     </a>
                 </div>
-                <span class="nav-toggle"><span></span><span></span><span></span></span>
-                <div class="nav-right nav-menu">
+                <span id="main-toggle" class="nav-toggle"><span></span><span></span><span></span></span>
+                <div id="main-menu" class="nav-right nav-menu">
                     <a class="nav-item">Home</a>
                     <a class="nav-item is-active">Demo Page</a>
                 </div>
@@ -2689,6 +2674,10 @@
             $(function () {
                 $('.modal-background, .modal-close').click(function () {
                     $(this).parent().removeClass('is-active');
+                });
+                
+                $('#main-toggle').click(function() {
+                    $('#main-menu').toggleClass('is-active');
                 });
             });
         </script>
