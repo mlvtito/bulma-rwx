@@ -42,5 +42,12 @@ if( lastPublishedVersion != currentVersion ) {
       sh 'ssh rwxywdhy@ftp.r-w-x.net "find /homez.32/rwxywdhy/bulma-rwx -type f"'
     }
   }
+
+  stage('Tag Version') {
+    node {
+      sh "git tag " + currentVersion
+      sh "git push --tags"
+    }
+  }
 }
 
