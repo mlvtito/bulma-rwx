@@ -5,6 +5,7 @@ node {
       deleteDir()
       git 'ssh://ci@91.121.149.68:29418/bulma/bulma-rwx.git'
       sh "node -v && npm -v"
+      sh 'ssh rwxywdhy@ssh.cluster002.ovh.net "which unzip"'
     }
 
     stage('Install Dependencies') {
@@ -22,15 +23,22 @@ node {
 }
 
 if( lastPublishedVersion != currentVersion ) {
-stage('Publish to NPM') {
-  timeout(time:5, unit:'DAYS') {
-    input 'Should we deliver this version ?'
-  }
-  node {
-    withEnv(["PATH=${tool 'NodeJS_4.6.0'}/bin:${PATH}"]) {
-      sh "npm publish"
+  stage('Publish to NPM') {
+    timeout(time:5, unit:'DAYS') {
+      input 'Should we deliver this version ?'
+    }
+    node {
+      withEnv(["PATH=${tool 'NodeJS_4.6.0'}/bin:${PATH}"]) {
+        sh "npm publish"
+      }
     }
   }
-}
+
+  stage('Publish Site) {
+    node {
+      sh "scp dist/bulma-rwx-site-*.tgz rwxywdhy@ssh.cluster002.ovh.net:/homez.32/rwxywdhy/depot/bulma-rwx/"
+      sh 'ssh rwxywdhy@ssh.cluster002.ovh.net "tar xzvf /homez.32/rwxywdhy/aurelia-highlightjs-depot/$(basename ./dist-site/aurelia-highlightjs-site-*.tgz) -C /homez.32/rwxywdhy/aurelia-highlightjs"'
+    }
+  }
 }
 
