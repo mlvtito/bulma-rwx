@@ -34,7 +34,7 @@ if( lastPublishedVersion != currentVersion ) {
     }
   }
 
-  stage('Publish Site) {
+  stage('Publish Site') {
     node {
       sh "scp dist/bulma-rwx-site-*.tgz rwxywdhy@ssh.cluster002.ovh.net:/homez.32/rwxywdhy/depot/bulma-rwx/"
       sh 'ssh rwxywdhy@ssh.cluster002.ovh.net "tar xzvf /homez.32/rwxywdhy/aurelia-highlightjs-depot/$(basename ./dist-site/aurelia-highlightjs-site-*.tgz) -C /homez.32/rwxywdhy/aurelia-highlightjs"'
