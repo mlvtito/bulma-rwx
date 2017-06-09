@@ -38,7 +38,7 @@ if( lastPublishedVersion != currentVersion ) {
       sh "scp dist/bulma-rwx-site-"+currentVersion+".zip rwxywdhy@ftp.r-w-x.net:/homez.32/rwxywdhy/depot/bulma-rwx/"
       sh 'ssh rwxywdhy@ftp.r-w-x.net "mkdir -p /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+'"'
       sh 'ssh rwxywdhy@ftp.r-w-x.net "unzip -o /homez.32/rwxywdhy/depot/bulma-rwx/bulma-rwx-site-'+currentVersion+'.zip -d /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+'/"'
-      sh 'ssh rwxywdhy@ftp.r-w-x.net "ln -sf /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+' /homez.32/rwxywdhy/bulma-rwx/current"'
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "rm -f /homez.32/rwxywdhy/bulma-rwx/current && ln -sf /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+' /homez.32/rwxywdhy/bulma-rwx/current"'
       sh 'ssh rwxywdhy@ftp.r-w-x.net "find /homez.32/rwxywdhy/bulma-rwx -type f"'
     }
   }
