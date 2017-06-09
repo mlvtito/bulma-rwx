@@ -22,6 +22,16 @@ node {
   }
 }
 
+stage('Publish Site') {
+    node {
+      sh "scp dist/bulma-rwx-site-"+currentVersion+".zip rwxywdhy@ftp.r-w-x.net:/homez.32/rwxywdhy/depot/bulma-rwx/"
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "mkdir -p /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+'"'
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "unzip -o /homez.32/rwxywdhy/depot/bulma-rwx/bulma-rwx-site-'+currentVersion+'.zip -d /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+'/"'
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "ln -sf /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+' /homez.32/rwxywdhy/bulma-rwx/current"'
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "find /homez.32/rwxywdhy/bulma-rwx -type f"'
+    }
+  }
+
 if( lastPublishedVersion != currentVersion ) {
   stage('Publish to NPM') {
     timeout(time:5, unit:'DAYS') {
@@ -36,8 +46,11 @@ if( lastPublishedVersion != currentVersion ) {
 
   stage('Publish Site') {
     node {
-      sh "scp dist/bulma-rwx-site-*.tgz rwxywdhy@ssh.cluster002.ovh.net:/homez.32/rwxywdhy/depot/bulma-rwx/"
-      sh 'ssh rwxywdhy@ssh.cluster002.ovh.net "tar xzvf /homez.32/rwxywdhy/aurelia-highlightjs-depot/$(basename ./dist-site/aurelia-highlightjs-site-*.tgz) -C /homez.32/rwxywdhy/aurelia-highlightjs"'
+      sh "scp dist/bulma-rwx-site-"+currentVersion+".zip rwxywdhy@ftp.r-w-x.net:/homez.32/rwxywdhy/depot/bulma-rwx/"
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "mkdir -p /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+'"'
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "unzip -o /homez.32/rwxywdhy/depot/bulma-rwx/bulma-rwx-site-'+currentVersion+'.zip -d /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+'/"'
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "ln -sf /homez.32/rwxywdhy/bulma-rwx/'+currentVersion+' /homez.32/rwxywdhy/bulma-rwx/current"'
+      sh 'ssh rwxywdhy@ftp.r-w-x.net "find /homez.32/rwxywdhy/bulma-rwx -type f"'
     }
   }
 }
