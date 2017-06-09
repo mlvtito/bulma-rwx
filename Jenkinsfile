@@ -5,7 +5,6 @@ node {
       deleteDir()
       git 'ssh://ci@91.121.149.68:29418/bulma/bulma-rwx.git'
       sh "node -v && npm -v"
-      sh 'ssh rwxywdhy@ssh.cluster002.ovh.net "which unzip"'
     }
 
     stage('Install Dependencies') {
