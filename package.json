@@ -1,6 +1,6 @@
 {
   "name": "bulma-rwx",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Customized Bulma with r-w-x colors",
   "author": "Arnaud Fonce <arnaud.fonce@r-w-x.net> (http://blog.r-w-x.net)",
   "main": "bulma-rwx.sass",
