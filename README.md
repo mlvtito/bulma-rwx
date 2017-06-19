@@ -11,7 +11,7 @@ http://bulma.r-w-x.net/
 
 To generate the customized CSS file, use this command : 
 
-``npm build``
+``npm run build``
 
 To change package version, use this command :
 
