@@ -6,8 +6,9 @@
   "main": "bulma-rwx.sass",
   "style": "bulma/css/bulma-rwx.css",
   "scripts": {
-    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-site",
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-minify && npm run build-site",
     "build-autoprefix": "postcss --use autoprefixer --output css/bulma-rwx.css css/bulma-rwx.css",
+    "build-minify": "minify --output css/bulma-rwx.min.css css/bulma-rwx.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true sass/bulma-rwx.sass css/bulma-rwx.css",
     "build-site": "mkdir -p dist && ./node_modules/bestzip/bin/cli.js dist/bulma-rwx-site-$npm_package_version.zip *.html css bulma-rwx.png",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "bestzip": "^1.1.4",
+    "minifier": "^0.8.1",
     "bulma": "^0.4.3",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.0.0",
