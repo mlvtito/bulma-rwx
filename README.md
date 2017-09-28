@@ -16,3 +16,8 @@ To generate the customized CSS file, use this command :
 To change package version, use this command :
 
 ``npm version X.Y.Z``
+
+To change bulma dependency version
+
+``npm install bulma@0.4.2 --save-dev
+npm run bulma-version``
