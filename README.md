@@ -19,7 +19,6 @@ To change package version, use this command :
 
 To change bulma dependency version
 
-``
-npm install bulma@0.4.2 --save-dev
-npm run bulma-version
-``
+``npm install bulma@0.4.2 --save-dev``
+``npm run bulma-version``
+
