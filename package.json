@@ -29,8 +29,8 @@
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "bestzip": "^1.1.4",
+    "bulma": "^0.5.3",
     "minifier": "^0.8.1",
-    "bulma": "^0.4.3",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.0.0",
     "replace": "^0.3.0",
