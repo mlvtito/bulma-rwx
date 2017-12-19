@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 
+def lastPublishedVersion
+def currentVersion
 pipeline {
     agent any
     stages {
@@ -29,8 +31,8 @@ pipeline {
                 sh "npm run build"
                 step([$class: 'ArtifactArchiver', artifacts: 'css/*', fingerprint: true])
                 step([$class: 'ArtifactArchiver', artifacts: 'dist/*', fingerprint: true])
-                env.lastPublishedVersion = sh(script: 'npm view bulma-rwx version', returnStdout: true).trim()
-                env.currentVersion = sh(script: 'npm version | grep bulma-rwx | cut -d "\'" -f 4', returnStdout: true).trim()
+                lastPublishedVersion = sh(script: 'npm view bulma-rwx version', returnStdout: true).trim()
+                currentVersion = sh(script: 'npm version | grep bulma-rwx | cut -d "\'" -f 4', returnStdout: true).trim()
             }
         }
 
@@ -40,7 +42,7 @@ pipeline {
             }
             when {
                 expression {
-                    return env.lastPublishedVersion != env.currentVersion;
+                    return lastPublishedVersion != currentVersion;
                 }
             }
             steps {
@@ -54,7 +56,7 @@ pipeline {
         stage('Publish Site') {
             when {
                 expression {
-                    return env.lastPublishedVersion != env.currentVersion;
+                    return lastPublishedVersion != currentVersion;
                 }
             }
             steps {
@@ -69,7 +71,7 @@ pipeline {
         stage('Tag Version') {
             when {
                 expression {
-                    return env.lastPublishedVersion != env.currentVersion;
+                    return lastPublishedVersion != currentVersion;
                 }
             }
             steps {
