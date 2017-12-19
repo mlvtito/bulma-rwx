@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 
     <head>
         <meta charset="utf-8">
@@ -11,35 +11,33 @@
     </head>
 
     <body>
-        <nav class="nav fixed has-shadow rwx">
+        <nav class="rwx navbar is-fixed-top">
             <div class="container">
-                <div class="nav-left">
-                    <a class="nav-item is-tab brand" href="index.html">
-                        <span class="title is-5">r-w-x bulma theme</span>
+                <div class="navbar-brand">
+                    <a class="navbar-item title">
+                        r-w-x bulma theme
                     </a>
-                </div>
-                <div class="nav-center">
-                    <a class="nav-item" href="https://backend.r-w-x.net/scm/bulma/bulma-rwx" target="git">
-                        <span class="icon"> <i class="fa fa-git"></i> </span>
+                    <a class="navbar-item is-hidden-desktop" href="https://backend.r-w-x.net/scm/bulma/bulma-rwx" target="git">
+                        <span class="icon">
+                            <i class="fa fa-lg fa-git"></i>
+                        </span>
                     </a>
+                    <button id ="main-toggle" class="button navbar-burger" data-target="main-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <span id="main-toggle" class="nav-toggle"><span></span><span></span><span></span></span>
-                <div id="main-menu" class="nav-right nav-menu">
-                    <a class="nav-item" href="index.html">Home</a>
-                    <a class="nav-item is-active">Demo</a>
-                    <!--<a class="nav-item" href="docs.html">Documentation</a>-->
+                <div id="main-menu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item is-active">Demo</a>
+                        <!--<a class="navbar-item" href="docs.html">Documentation</a>-->
+                    </div>
                 </div>
             </div>
         </nav>
-        <nav class="nav rwx">
-            <div class="container">
-                <div class="nav-left">
-                    <a class="nav-item brand">
-                        <span class="title is-5">R-w-X Bulma Theme</span>
-                    </a>
-                </div>
-            </div>
-        </nav>
+        
         <div class="columns">
             <div class="column is-narrow is-hidden-mobile" style="height: 100vh; overflow-y: scroll; position: fixed;">
                 <aside class="menu section" style="padding-top: 0.5em;">
@@ -2839,6 +2837,7 @@
                 });
 
                 $('#main-toggle').click(function () {
+                    $('#main-toggle').toggleClass('is-active');
                     $('#main-menu').toggleClass('is-active');
                 });
             });

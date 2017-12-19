@@ -8,55 +8,45 @@ $brown-rwx: #544028
 $primary: $blue-rwx
 $family-sans-serif: Ubuntu,Arial,Helvetica,sans-serif
 
-@import "./node_modules/bulma/bulma"
-
-.nav.rwx
+.navbar.rwx
   background-color: $blue-rwx
   color: $white
-  &.fixed
-    position: fixed
-    width: 100%
-    z-index: 15
-  a.nav-item
-    color: grey
-    &:hover
-      color: $white
-      background-color: darken($blue-rwx, 5%)
-    &.is-active
-      background-color: $brown-rwx
-      color: $white
-    &.brand
-      border-color: $blue-rwx
+  .navbar-brand
+    .navbar-item
       background-color: $blue-rwx
-      color: lightgray
-      &:hover
-        border-color: $blue-rwx
-        background-color: $blue-rwx
-        color: white
-    &.is-tab
-      border-bottom: 4px solid transparent
-      border-top: 4px solid transparent
-      &.is-active
-        border-bottom: 4px solid $brown-rwx
-        color: $white
-        background-color: $blue-rwx
-      &.brand
-        border-color: $brown-rwx
+      color: grey
+      outline-style: none
+      &.title
         background-color: $brown-rwx
+        border-color: $brown-rwx
         color: lightgray
-        &:hover
-          color: white
-    .title
-      color: inherit
-      font-weight: 700
-      font-size: 1.05em
-  .nav-toggle 
-    &:hover
-      background-color: $brown-rwx
-    span
-      background-color: $white
-  +mobile
-    .nav-menu.is-active
+        font-weight: 700
+        font-size: 1.05em
+        margin-bottom: 0px
+      &:hover
+        background-color: darken($blue-rwx, 5%)
+        color: white
+    .navbar-burger
       background-color: $blue-rwx
-      a.nav-item
-        border-top: 0px
+      border-color: $blue-rwx
+      color: $white
+      box-shadow: 0 0 0 0
+      &:hover
+        background-color: $brown-rwx
+        border-color: $brown-rwx
+  .navbar-menu
+    background-color: $blue-rwx
+    .navbar-end
+      .navbar-item
+        color: grey
+        &:hover
+          color: $white
+          background-color: darken($blue-rwx, 5%)
+        &.is-active
+          background-color: $brown-rwx
+          color: $white
+
+@import "./node_modules/bulma/bulma"
+
+
+  
