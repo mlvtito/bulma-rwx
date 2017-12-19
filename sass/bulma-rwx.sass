@@ -8,7 +8,7 @@ $brown-rwx: #544028
 $primary: $blue-rwx
 $family-sans-serif: Ubuntu,Arial,Helvetica,sans-serif
 
-.navbar.rwx
+.navbar.is-rwx
   background-color: $blue-rwx
   color: $white
   .navbar-brand
@@ -23,6 +23,10 @@ $family-sans-serif: Ubuntu,Arial,Helvetica,sans-serif
         font-weight: 700
         font-size: 1.05em
         margin-bottom: 0px
+        &:hover
+          background-color: $brown-rwx
+          border-color: $brown-rwx
+          color: $white
       &:hover
         background-color: darken($blue-rwx, 5%)
         color: white
@@ -36,15 +40,46 @@ $family-sans-serif: Ubuntu,Arial,Helvetica,sans-serif
         border-color: $brown-rwx
   .navbar-menu
     background-color: $blue-rwx
-    .navbar-end
+    .navbar-start
+      a.navbar-item:hover
+        color: $white
+        background-color: darken($blue-rwx, 5%)
       .navbar-item
+        outline-style: none
+        &.has-dropdown:hover
+          .navbar-link
+            background-color: darken($blue-rwx, 5%)
         color: grey
-        &:hover
-          color: $white
-          background-color: darken($blue-rwx, 5%)
         &.is-active
           background-color: $brown-rwx
           color: $white
+        .navbar-link
+          color: grey
+          &:hover
+            color: $white
+            background-color: darken($blue-rwx, 5%)
+        .navbar-dropdown
+          background-color: $blue-rwx
+    .navbar-end
+      a.navbar-item:hover
+        color: $white
+        background-color: darken($blue-rwx, 5%)
+      .navbar-item
+        outline-style: none
+        &.has-dropdown:hover
+          .navbar-link
+            background-color: darken($blue-rwx, 5%)
+        color: grey
+        &.is-active
+          background-color: $brown-rwx
+          color: $white
+        .navbar-link
+          color: grey
+          &:hover
+            color: $white
+            background-color: darken($blue-rwx, 5%)
+        .navbar-dropdown
+          background-color: $blue-rwx
 
 @import "./node_modules/bulma/bulma"
 
