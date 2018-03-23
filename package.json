@@ -27,14 +27,14 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^8.2.0",
     "bestzip": "^1.1.4",
-    "bulma": "^0.6.1",
-    "bulma-extensions": "^0.5.2",
+    "bulma": "^0.6.2",
+    "bulma-extensions": "^1.0.13",
     "minifier": "^0.8.1",
-    "node-sass": "^4.5.3",
-    "postcss-cli": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^5.0.0",
     "replace": "^0.3.0",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.2"
   }
 }
