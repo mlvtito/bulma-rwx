@@ -51,11 +51,180 @@
                 <aside class="menu section" style="padding-top: 0.5em;">
                     <p class="menu-label"> Form </p>
                     <ul class="menu-list">
+                        <li><a href="#checkbox"> Checkbox </a></li>
+                        <li><a href="#iconpicker"> Icon Picker </a></li>
+                        <li><a href="#slider"> Slider </a></li>
                         <li><a href="#switch"> Switch </a></li>
+                        <li><a href="#tagsinput"> Tags Input </a></li>
+                    </ul>
+
+                    <p class="menu-label"> Elements </p>
+                    <ul class="menu-list">
+                        <li><a href="#badge"> Badge </a></li>
+                        <li><a href="#pageloader"> Page Loader </a></li>
+                        <li><a href="#tooltip"> Tooltip </a></li>
+                    </ul>
+
+                    <p class="menu-label"> Components </p>
+                    <ul class="menu-list">
+                        <li><a href="#accordion"> Accordion </a></li>
+                        <li><a href="#calendar"> Calendar </a></li>
+                        <li><a href="#carousel"> Carousel </a></li>
+                        <li><a href="#pricingtable"> Pricing Table </a></li>
+                        <li><a href="#quickview"> Quickview </a></li>
+                        <li><a href="#steps"> Steps </a></li>
+                        <li><a href="#timeline"> Timeline </a></li>
                     </ul>
                 </aside>
             </div>
+
+
             <div class="column">
+
+                <div class="column is-offset-2" id="checkbox">
+                    <section class="section" >
+                        <h1 class="title"> Checkbox </h1>
+                        <hr>
+                        <div class="columns">
+                            <div class="column is-one-third">
+                                <div class="field">
+                                    <input class="is-checkradio" id="exampleCheckboxDefault" type="checkbox" name="exampleCheckboxDefault" checked="checked">
+                                    <label for="exampleCheckboxDefault">Checkbox</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-success" id="exampleCheckboxSuccess" type="checkbox" name="exampleCheckboxSuccess" checked="checked">
+                                    <label for="exampleCheckboxSuccess">Checkbox - success</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-warning" id="exampleCheckboxWarning" type="checkbox" name="exampleCheckboxWarning" checked="checked">
+                                    <label for="exampleCheckboxWarning">Checkbox - warning</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-danger" id="exampleCheckboxDanger" type="checkbox" name="exampleCheckboxDanger" checked="checked">
+                                    <label for="exampleCheckboxDanger">Checkbox - danger</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-info" id="exampleCheckboxInfo" type="checkbox" name="exampleCheckboxInfo" checked="checked">
+                                    <label for="exampleCheckboxInfo">Checkbox - info</label>
+                                </div>
+
+                                <div class="bd-notification is-dark">
+                                    <div class="field">
+                                        <input class="is-checkradio is-white" id="exampleCheckboxWhite" type="checkbox" name="exampleCheckboxWhite" checked="checked">
+                                        <label for="exampleCheckboxWhite">Checkbox - white</label>
+
+                                        <input class="is-checkradio is-white" id="exampleCheckboxWhite2" type="checkbox" name="exampleCheckboxWhite2">
+                                        <label for="exampleCheckboxWhite2">Checkbox - white</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-one-third">
+                                <div class="field">
+                                    <input class="is-checkradio" id="exampleRadioDefault" type="radio" name="exampleRadioDefault" checked="checked">
+                                    <label for="exampleRadioDefault">Radio</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-success" id="exampleRadioSuccess" type="radio" name="exampleRadioSuccess" checked="checked">
+                                    <label for="exampleRadioSuccess">Radio - success</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-warning" id="exampleRadioWarning" type="radio" name="exampleRadioWarning" checked="checked">
+                                    <label for="exampleRadioWarning">Radio - warning</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-danger" id="exampleRadioDanger" type="radio" name="exampleRadioDanger" checked="checked">
+                                    <label for="exampleRadioDanger">Radio - danger</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-info" id="exampleRadioInfo" type="radio" name="exampleRadioInfo" checked="checked">
+                                    <label for="exampleRadioInfo">Radio - info</label>
+                                </div>
+
+                                <div class="bd-notification is-dark">
+                                    <div class="field">
+                                        <input class="is-checkradio is-white" id="exampleRadioWhite" type="radio" name="exampleRadioWhite" checked="checked">
+                                        <label for="exampleRadioWhite">Radio - white</label>
+
+                                        <input class="is-checkradio is-white" id="exampleRadioWhite2" type="radio" name="exampleRadioWhite2">
+                                        <label for="exampleRadioWhite2">Radio - white</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-one-third">
+                                <div class="field">
+                                    <input class="is-checkradio is-circle" id="exampleCheckboxDefaultDisabledCircle" type="checkbox" name="exampleCheckboxDefaultDisabledCircle" checked="checked" disabled="disabled">
+                                    <label for="exampleCheckboxDefaultDisabledCircle">Checkbox</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-circle" id="exampleCheckboxDefaultCircle" type="checkbox" name="exampleCheckboxDefaultCircle" checked="checked">
+                                    <label for="exampleCheckboxDefaultCircle">Checkbox</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-success is-circle" id="exampleCheckboxSuccessCircle" type="checkbox" name="exampleCheckboxSuccessCircle" checked="checked">
+                                    <label for="exampleCheckboxSuccessCircle">Checkbox - success</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-warning is-circle" id="exampleCheckboxWarningCircle" type="checkbox" name="exampleCheckboxWarningCircle" checked="checked">
+                                    <label for="exampleCheckboxWarningCircle">Checkbox - warning</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-danger is-circle" id="exampleCheckboxDangerCircle" type="checkbox" name="exampleCheckboxDangerCircle" checked="checked">
+                                    <label for="exampleCheckboxDangerCircle">Checkbox - danger</label>
+                                </div>
+
+                                <div class="field">
+                                    <input class="is-checkradio is-info is-circle" id="exampleCheckboxInfoCircle" type="checkbox" name="exampleCheckboxInfoCircle" checked="checked">
+                                    <label for="exampleCheckboxInfoCircle">Checkbox - info</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="iconpicker">
+                    <section class="section" >
+                        <h1 class="title"> Icon Picker </h1>
+                        <hr>
+                        <input type="text" id="iconPicker" data-action="iconPicker" value="fa fa-icon fa-star" />
+                        <p class="help">Click on icon to open the iconPicker.</p>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="slider">
+                    <section class="section" >
+                        <h1 class="title"> Slider </h1>
+                        <hr>
+                        <div class="columns">
+                            <div class="column is-one-third">
+                                <input class="slider is-fullwidth" step="1" min="0" max="100" value="50" type="range">
+                                <input class="slider is-fullwidth is-success" step="1" min="0" max="100" value="50" type="range">
+                                <input class="slider is-fullwidth is-warning" step="1" min="0" max="100" value="50" type="range">
+                                <input class="slider is-fullwidth is-danger" step="1" min="0" max="100" value="50" type="range">
+                                <input class="slider is-fullwidth is-info" step="1" min="0" max="100" value="50" type="range">
+                            </div>
+                            <div class="column is-one-third">
+                                <input class="slider is-fullwidth is-small is-circle" step="1" min="0" max="100" value="50" type="range" disabled="disabled">
+                                <input class="slider is-fullwidth is-small is-circle" step="1" min="0" max="100" value="50" type="range">
+                                <input class="slider is-fullwidth is-success is-circle" step="1" min="0" max="100" value="50" type="range">
+                                <input class="slider is-fullwidth is-medium is-warning is-circle" step="1" min="0" max="100" value="50" type="range">
+                                <input class="slider is-fullwidth is-large is-danger is-circle" step="1" min="0" max="100" value="50" type="range">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
                 <div class="column is-offset-2" id="switch">
                     <section class="section" >
                         <h1 class="title"> Switch </h1>
@@ -86,7 +255,833 @@
                         </div>
                     </section>
                 </div>
+
+                <div class="column is-offset-2" id="tagsinput">
+                    <section class="section" >
+                        <h1 class="title"> Tags input </h1>
+                        <hr>
+                        <div class="tagsinput field is-grouped is-grouped-multiline input">
+                            <div class="control" data-tag="Tag1">
+                                <div class="tags has-addons">
+                                    <span class="tag">Tag1</span><a class="tag is-delete"></a>
+                                </div>
+                            </div>
+                            <div class="control" data-tag="Tag2">
+                                <div class="tags has-addons">
+                                    <span class="tag">Tag2</span><a class="tag is-delete"></a>
+                                </div>
+                            </div>
+                            <div class="control" data-tag="Tag3">
+                                <div class="tags has-addons">
+                                    <span class="tag is-active">Tag3</span><a class="tag is-delete"></a>
+                                </div>
+                            </div>
+                            <input placeholder="Add Tag" style="width: 83.75px;" type="text"></div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="badge">
+                    <section class="section" >
+                        <h1 class="title"> Badge </h1>
+                        <hr>
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="columns">
+                                    <div class="column">
+                                        <span class="badge" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-success" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-warning" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-danger" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="columns">
+                                    <div class="column">
+                                        <span class="badge" data-badge="8">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-success" data-badge="88">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-danger" data-badge="888">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="block">
+                                    <button class="button badge" data-badge="">Button</button>
+                                    <button class="button badge" data-badge="8">Button</button>
+                                </div>
+
+                                <div class="block">
+                                    <button class="button is-primary badge" data-badge="">Button</button>
+                                    <button class="button is-info badge" data-badge="8">Button</button>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="columns">
+                                    <div class="column">
+                                        <span class="badge is-badge-outlined" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-success is-badge-outlined" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-warning is-badge-outlined" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-danger is-badge-outlined" data-badge="">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="columns">
+                                    <div class="column">
+                                        <span class="badge is-badge-outlined" data-badge="8">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-success is-badge-outlined" data-badge="88">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="badge is-badge-danger is-badge-outlined" data-badge="888">
+                                            Notifications
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="block">
+                                    <button class="button badge is-badge-outlined" data-badge="">Button</button>
+                                    <button class="button badge is-badge-outlined" data-badge="8">Button</button>
+                                </div>
+
+                                <div class="block">
+                                    <button class="button is-primary badge is-badge-outlined" data-badge="">Button</button>
+                                    <button class="button is-info badge is-badge-outlined" data-badge="8">Button</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="pageloader">
+                    <section class="section" >
+                        <h1 class="title"> Page Loader </h1>
+                        <hr>
+                        <button id="pltestbtn" data-target="pageloader" class="button is-primary">Show Page-loader (3 sec only)</button>
+                        <div id="pltest" class="pageloader">
+                            <span class="title">Pageloader</span>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="tooltip">
+                    <section class="section" >
+                        <h1 class="title"> Tooltip </h1>
+                        <hr>
+                        <div class="columns is-multiline text-center">
+                            <div class="column">
+                                <button class="button is-primary tooltip" data-tooltip="Tooltip Text">top tooltip</button>
+                            </div>
+                            <div class="column">
+                                <button class="button is-primary tooltip is-tooltip-right" data-tooltip="Tooltip Text">right tooltip</button>
+                            </div>
+                            <div class="column">
+                                <button class="button is-primary tooltip is-tooltip-bottom" data-tooltip="Tooltip Text">bottom tooltip</button>
+                            </div>
+                            <div class="column">
+                                <button class="button is-primary tooltip is-tooltip-left" data-tooltip="Tooltip Text">left tooltip</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="accordion">
+                    <section class="section" >
+                        <h1 class="title"> Accordion </h1>
+                        <hr>
+                        <section class="accordions">
+                            <article class="accordion is-active">
+                                <div class="accordion-header toggle">
+                                    <p>Hello World</p>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="accordion-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="accordion">
+                                <div class="accordion-header">
+                                    <p>Hello World</p>
+                                    <button class="toggle" aria-label="toggle"></button>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="accordion-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="accordion">
+                                <div class="accordion-header">
+                                    <p>Hello World</p>
+                                    <button class="toggle" aria-label="toggle"></button>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="accordion-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="calendar">
+                    <section class="section" >
+                        <h1 class="title"> Calendar </h1>
+                        <hr>
+                        <div>
+                            <div class="calendar">
+                                <div class="calendar-nav">
+                                    <div class="calendar-nav-previous-month">
+                                        <button class="button is-text">
+                                            <i class="fa fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                    <div>March 2017</div>
+                                    <div class="calendar-nav-next-month">
+                                        <button class="button is-text">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="calendar-container">
+                                    <div class="calendar-header">
+                                        <div class="calendar-date">Sun</div>
+                                        <div class="calendar-date">Mon</div>
+                                        <div class="calendar-date">Tue</div>
+                                        <div class="calendar-date">Wed</div>
+                                        <div class="calendar-date">Thu</div>
+                                        <div class="calendar-date">Fri</div>
+                                        <div class="calendar-date">Sat</div>
+                                    </div>
+                                    <div class="calendar-body">
+                                        <div class="calendar-date is-disabled"><button class="date-item">26</button></div>
+                                        <div class="calendar-date is-disabled"><button class="date-item">27</button></div>
+                                        <div class="calendar-date is-disabled"><button class="date-item">28</button></div>
+                                        <div class="calendar-date"><button class="date-item">1</button></div>
+                                        <div class="calendar-date"><button class="date-item">2</button></div>
+                                        <div class="calendar-date"><button class="date-item">3</button></div>
+                                        <div class="calendar-date tooltip" data-tooltip="Today"><button class="date-item is-today">4</button></div>
+                                        <div class="calendar-date tooltip" data-tooltip="Not available" disabled=""><button class="date-item">5</button></div>
+                                        <div class="calendar-date"><button class="date-item">6</button></div>
+                                        <div class="calendar-date"><button class="date-item">7</button></div>
+                                        <div class="calendar-date tooltip" data-tooltip="You have appointments"><button class="date-item">8</button></div>
+                                        <div class="calendar-date"><button class="date-item">9</button></div>
+                                        <div class="calendar-date"><button class="date-item">10</button></div>
+                                        <div class="calendar-date"><button class="date-item">11</button></div>
+                                        <div class="calendar-date"><button class="date-item">12</button></div>
+                                        <div class="calendar-date"><button class="date-item">13</button></div>
+                                        <div class="calendar-date"><button class="date-item">14</button></div>
+                                        <div class="calendar-date"><button class="date-item">15</button></div>
+                                        <div class="calendar-date calendar-range calendar-range-start"><button class="date-item is-active">16</button></div>
+                                        <div class="calendar-date calendar-range"><button class="date-item">17</button></div>
+                                        <div class="calendar-date calendar-range"><button class="date-item">18</button></div>
+                                        <div class="calendar-date calendar-range"><button class="date-item">19</button></div>
+                                        <div class="calendar-date calendar-range calendar-range-end"><button class="date-item is-active">20</button></div>
+                                        <div class="calendar-date"><button class="date-item">21</button></div>
+                                        <div class="calendar-date"><button class="date-item">22</button></div>
+                                        <div class="calendar-date"><button class="date-item">23</button></div>
+                                        <div class="calendar-date"><button class="date-item">24</button></div>
+                                        <div class="calendar-date"><button class="date-item">25</button></div>
+                                        <div class="calendar-date"><button class="date-item">26</button></div>
+                                        <div class="calendar-date"><button class="date-item">27</button></div>
+                                        <div class="calendar-date"><button class="date-item">28</button></div>
+                                        <div class="calendar-date"><button class="date-item">29</button></div>
+                                        <div class="calendar-date"><button class="date-item">30</button></div>
+                                        <div class="calendar-date"><button class="date-item">31</button></div>
+                                        <div class="calendar-date is-disabled"><button class="date-item">1</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="calendar is-large">
+                                <div class="calendar-nav">
+                                    <div class="calendar-nav-previous-month">
+                                        <button class="button is-text">
+                                            <i class="fa fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                    <div>March 2017</div>
+                                    <div class="calendar-nav-next-month">
+                                        <button class="button is-text">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="calendar-container">
+                                    <div class="calendar-header">
+                                        <div class="calendar-date">Sun</div>
+                                        <div class="calendar-date">Mon</div>
+                                        <div class="calendar-date">Tue</div>
+                                        <div class="calendar-date">Wed</div>
+                                        <div class="calendar-date">Thu</div>
+                                        <div class="calendar-date">Fri</div>
+                                        <div class="calendar-date">Sat</div>
+                                    </div>
+                                    <div class="calendar-body">
+                                        <div class="calendar-date is-disabled"><button class="date-item">26</button></div>
+                                        <div class="calendar-date is-disabled">
+                                            <button class="date-item">27</button>
+                                            <div class="calendar-events">
+                                                <a class="calendar-event">Default event</a>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-date is-disabled"><button class="date-item">28</button></div>
+                                        <div class="calendar-date"><button class="date-item">1</button></div>
+                                        <div class="calendar-date"><button class="date-item">2</button></div>
+                                        <div class="calendar-date"><button class="date-item">3</button></div>
+                                        <div class="calendar-date tooltip" data-tooltip="Today"><button class="date-item is-today">4</button></div>
+                                        <div class="calendar-date" disabled=""><button class="date-item">5</button></div>
+                                        <div class="calendar-date"><button class="date-item">6</button></div>
+                                        <div class="calendar-date"><button class="date-item">7</button></div>
+                                        <div class="calendar-date tooltip" data-tooltip="You have appointments">
+                                            <button class="date-item badge">8</button>
+                                            <div class="calendar-events">
+                                                <a class="calendar-event is-primary">Primary event</a>
+                                                <a class="calendar-event is-warning">Warning event</a>
+                                                <a class="calendar-event is-danger">Danger event</a>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-date"><button class="date-item">9</button></div>
+                                        <div class="calendar-date"><button class="date-item">10</button></div>
+                                        <div class="calendar-date"><button class="date-item">11</button></div>
+                                        <div class="calendar-date">
+                                            <button class="date-item">12</button>
+                                            <div class="calendar-events">
+                                                <a class="calendar-event">Default event</a>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-date"><button class="date-item">13</button></div>
+                                        <div class="calendar-date"><button class="date-item">14</button></div>
+                                        <div class="calendar-date"><button class="date-item">15</button></div>
+                                        <div class="calendar-date calendar-range calendar-range-start"><button class="date-item is-active">16</button></div>
+                                        <div class="calendar-date calendar-range"><button class="date-item">17</button></div>
+                                        <div class="calendar-date calendar-range"><button class="date-item">18</button></div>
+                                        <div class="calendar-date calendar-range"><button class="date-item">19</button></div>
+                                        <div class="calendar-date calendar-range calendar-range-end">
+                                            <button class="date-item is-active">20</button>
+                                            <div class="calendar-events">
+                                                <a class="calendar-event is-success">Success event</a>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-date"><button class="date-item">21</button></div>
+                                        <div class="calendar-date"><button class="date-item">22</button></div>
+                                        <div class="calendar-date"><button class="date-item">23</button></div>
+                                        <div class="calendar-date"><button class="date-item">24</button></div>
+                                        <div class="calendar-date"><button class="date-item">25</button></div>
+                                        <div class="calendar-date"><button class="date-item">26</button></div>
+                                        <div class="calendar-date"><button class="date-item">27</button></div>
+                                        <div class="calendar-date"><button class="date-item">28</button></div>
+                                        <div class="calendar-date"><button class="date-item">29</button></div>
+                                        <div class="calendar-date"><button class="date-item">30</button></div>
+                                        <div class="calendar-date"><button class="date-item">31</button></div>
+                                        <div class="calendar-date is-disabled">
+                                            <button class="date-item">1</button>
+                                            <div class="calendar-events">
+                                                <a class="calendar-event">Second default event</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="carousel">
+                    <section class="section" >
+                        <h1 class="title"> Carousel </h1>
+                        <hr>
+                        <div>
+                            <div class='carousel carousel-animated carousel-animate-slide'>
+                                <div class='carousel-container'>
+                                    <div class='carousel-item has-background is-active'>
+                                        <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" width="640" height="310" />
+                                        <div class="title">Merry Christmas</div>
+                                    </div>
+                                    <div class='carousel-item has-background'>
+                                        <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" width="640" height="310" />
+                                        <div class="title">Original Gift: Offer a song with <a href="https://lasongbox.com" target="_blank">La Song Box</a></div>
+                                    </div>
+                                    <div class='carousel-item has-background'>
+                                        <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" width="640" height="310" />
+                                        <div class="title">Sushi time</div>
+                                    </div>
+                                    <div class='carousel-item has-background'>
+                                        <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" width="640" height="310" />
+                                        <div class="title">Life</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-navigation">
+                                    <div class="carousel-nav-left">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="carousel-nav-right">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="pricingtable">
+                    <section class="section" >
+                        <h1 class="title"> Pricing Table </h1>
+                        <hr>
+                        <div>
+                            <div class="pricing-table">
+                                <div class="pricing-plan">
+                                    <div class="plan-header">Starter</div>
+                                    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>20</span>/month</div>
+                                    <div class="plan-items">
+                                        <div class="plan-item">20GB Storage</div>
+                                        <div class="plan-item">100 Domains</div>
+                                        <div class="plan-item">-</div>
+                                        <div class="plan-item">-</div>
+                                    </div>
+                                    <div class="plan-footer">
+                                        <button class="button is-fullwidth" disabled="disabled">Current plan</button>
+                                    </div>
+                                </div>
+
+                                <div class="pricing-plan is-warning">
+                                    <div class="plan-header">Startups</div>
+                                    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>40</span>/month</div>
+                                    <div class="plan-items">
+                                        <div class="plan-item">20GB Storage</div>
+                                        <div class="plan-item">25 Domains</div>
+                                        <div class="plan-item">1TB Bandwidth</div>
+                                        <div class="plan-item">-</div>
+                                    </div>
+                                    <div class="plan-footer">
+                                        <button class="button is-fullwidth">Choose</button>
+                                    </div>
+                                </div>
+
+                                <div class="pricing-plan is-active">
+                                    <div class="plan-header">Growing Team</div>
+                                    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>60</span>/month</div>
+                                    <div class="plan-items">
+                                        <div class="plan-item">200GB Storage</div>
+                                        <div class="plan-item">50 Domains</div>
+                                        <div class="plan-item">1TB Bandwidth</div>
+                                        <div class="plan-item">100 Email Boxes</div>
+                                    </div>
+                                    <div class="plan-footer">
+                                        <button class="button is-fullwidth">Choose</button>
+                                    </div>
+                                </div>
+
+                                <div class="pricing-plan is-danger">
+                                    <div class="plan-header">Enterprise</div>
+                                    <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>100</span>/month</div>
+                                    <div class="plan-items">
+                                        <div class="plan-item">2TB Storage</div>
+                                        <div class="plan-item">100 Domains</div>
+                                        <div class="plan-item">1TB Bandwidth</div>
+                                        <div class="plan-item">1000 Email Boxes</div>
+                                    </div>
+                                    <div class="plan-footer">
+                                        <button class="button is-fullwidth">Choose</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="quickview">
+                    <section class="section" >
+                        <h1 class="title"> Quick View </h1>
+                        <hr>
+                        <div>
+                            <div id="quickviewDefault" class="quickview">
+                                <header class="quickview-header">
+                                    <p class="title">Quickview title</p>
+                                    <span class="delete" data-dismiss="quickview"></span>
+                                </header>
+
+                                <div class="quickview-body">
+                                    <div class="quickview-block">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <footer class="quickview-footer">
+
+                                </footer>
+                            </div>
+
+                            <button class="button is-primary" data-show="quickview" data-target="quickviewDefault">Show quickview</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="steps">
+                    <section class="section" >
+                        <h1 class="title"> Steps </h1>
+                        <hr>
+                        <div>
+                            <div class="steps">
+                                <div class="step-item is-completed is-success">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </div>
+                                    <div class="step-details">
+                                        <p class="step-title">Step 1</p>
+                                        <p>This is the first step of the process.</p>
+                                    </div>
+                                </div>
+                                <div class="step-item is-active">
+                                    <div class="step-marker"></div>
+                                    <div class="step-details">
+                                        <p class="step-title">Step 2</p>
+                                        <p>This is the second step. You get here once you have completed the first step.</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-marker">3</div>
+                                    <div class="step-details">
+                                        <p class="step-title">Step 3</p>
+                                        <p>This is the third step. One more last before the end.</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-flag"></i>
+                                        </span>
+                                    </div>
+                                    <div class="step-details">
+                                        <p class="step-title">Step 4</p>
+                                        <p>Final step. You have completed all the previous steps and end the process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="steps">
+                                <li class="step-item is-completed is-success">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </div>
+                                    <div class="step-details is-primary is-completed">
+                                        <p class="step-title">Step 1</p>
+                                        <p>This is the first step of the process.</p>
+                                    </div>
+                                </li>
+                                <li class="step-item is-info is-completed">
+                                    <div class="step-marker"></div>
+                                    <div class="step-details">
+                                        <p class="step-title">Step 2</p>
+                                        <p>This is the second step. You get here once you have completed the first step.</p>
+                                    </div>
+                                </li>
+                                <li class="step-item is-warning is-completed">
+                                    <div class="step-marker">3</div>
+                                    <div class="step-details">
+                                        <p class="step-title">Step 3</p>
+                                        <p>This is the third step. One more last before the end.</p>
+                                    </div>
+                                </li>
+                                <li class="step-item is-danger is-active">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-flag"></i>
+                                        </span>
+                                    </div>
+                                    <div class="step-details">
+                                        <p class="step-title">Step 4</p>
+                                        <p>Final step. You have completed all the previous steps and end the process.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="steps is-small">
+                                <li class="step-item is-completed">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="step-item is-active">
+                                    <div class="step-marker"></div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">3</div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-flag"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="steps">
+                                <li class="step-item is-completed">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="step-item is-active">
+                                    <div class="step-marker"></div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">3</div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-flag"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="steps is-medium">
+                                <li class="step-item is-completed">
+                                    <div class="step-marker"></div>
+                                </li>
+                                <li class="step-item is-active">
+                                    <div class="step-marker"></div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">3</div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-flag"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="steps is-large">
+                                <li class="step-item is-completed">
+                                    <div class="step-marker"></div>
+                                </li>
+                                <li class="step-item is-active">
+                                    <div class="step-marker"></div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">3</div>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-marker">
+                                        <span class="icon">
+                                            <i class="fa fa-flag"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column is-offset-2" id="timeline">
+                    <section class="section" >
+                        <h1 class="title"> Timeline </h1>
+                        <hr>
+                        <div>
+                            <div class="timeline">
+                                <header class="timeline-header">
+                                    <span class="tag is-medium is-primary">Start</span>
+                                </header>
+                                <div class="timeline-item is-primary">
+                                    <div class="timeline-marker is-primary"></div>
+                                    <div class="timeline-content">
+                                        <p class="heading">January 2016</p>
+                                        <p>Timeline content - Can include any HTML element</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item is-warning">
+                                    <div class="timeline-marker is-warning is-image is-32x32">
+                                        <img src="http://bulma.io/images/placeholders/32x32.png">
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p class="heading">February 2016</p>
+                                        <p>Timeline content - Can include any HTML element</p>
+                                    </div>
+                                </div>
+                                <header class="timeline-header">
+                                    <span class="tag is-primary">2017</span>
+                                </header>
+                                <div class="timeline-item is-danger">
+                                    <div class="timeline-marker is-danger is-icon">
+                                        <i class="fa fa-flag"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p class="heading">March 2017</p>
+                                        <p>Timeline content - Can include any HTML element</p>
+                                    </div>
+                                </div>
+                                <header class="timeline-header">
+                                    <span class="tag is-medium is-primary">End</span>
+                                </header>
+                            </div>
+                        </div>
+                    </section>
+                </div><div class="column is-offset-2" id="box">
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="columns">
+                                <div class="column is-half has-text-left">
+                                    <p>
+                                        <small>
+                                            <strong>r-w-x bulma theme</strong> by 
+                                            <a href="http://blog.r-w-x.net" target="blog"
+                                               style="text-decoration: underline;">Arnaud Fonce</a>
+                                            <br>
+                                        </small>
+                                    </p>
+                                    <p>
+                                        <small>
+                                            Source code licensed <a href="http://opensource.org/licenses/mit-license.php"
+                                                                    style="text-decoration: underline;">MIT</a>.
+                                            <br>
+                                            Website content licensed 
+                                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                               style="text-decoration: underline;">CC BY-NC-SA 4.0</a>.
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="column is-half has-text-left">
+                                    <p>
+                                        <small>
+                                            Based on <a href="http://bulma.io/" target="bulma" 
+                                                        style="text-decoration: underline;">Bulma</a>
+                                            and <a href="https://wikiki.github.io/" target="bulma-extensions" 
+                                                   style="text-decoration: underline;">Bulma extensions</a>.<br>
+                                            Icons from <a href="http://fontawesome.io" target="fontawesome" 
+                                                          style="text-decoration: underline;">Font Awesome</a>.<br>
+                                            Web Fonts from <a href="https://fonts.google.com/" target="gfont" 
+                                                              style="text-decoration: underline;">Google</a>.<br>
+                                            Demo page from <a href="https://jenil.github.io/bulmaswatch/" target="bulmaswatch" 
+                                                              style="text-decoration: underline;">Bulmaswatch</a>.<br>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                    </footer></div>
             </div>
         </div>
+        <script crossorigin="anonymous" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" src="https://code.jquery.com/jquery-3.1.1.min.js">
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('#pltestbtn').click(function () {
+                    $('#pltest').toggleClass("is-active");
+                    setTimeout(function () {
+                        $('#pltest').toggleClass("is-active");
+                    }, 3000);
+                });
+            });
+
+            function closest(el, selector) {
+                var matchesFn;
+
+                // find vendor prefix
+                ['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'].some(function (fn) {
+                    if (typeof document.body[ fn ] == 'function') {
+                        matchesFn = fn;
+                        return true;
+                    }
+                    return false;
+                });
+
+                var parent;
+
+                // traverse parents
+                while (el) {
+                    parent = el.parentElement;
+                    if (parent && parent[ matchesFn ](selector)) {
+                        return parent;
+                    }
+                    el = parent;
+                }
+
+                return null;
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all document sliders
+                var showQuickview = document.querySelectorAll('[data-show="quickview"]');
+                [].forEach.call(showQuickview, function (show) {
+                    var quickview = document.getElementById(show.dataset[ 'target' ]);
+                    if (quickview) {
+                        // Add event listener to update output when slider value change
+                        show.addEventListener('click', function (event) {
+                            quickview.classList.add('is-active');
+                        });
+                    }
+                });
+
+                // Get all document sliders
+                var dismissQuickView = document.querySelectorAll('[data-dismiss="quickview"]');
+                [].forEach.call(dismissQuickView, function (dismiss) {
+                    var quickview = closest(dismiss, '.quickview');
+                    if (quickview) {
+                        // Add event listener to update output when slider value change
+                        dismiss.addEventListener('click', function (event) {
+                            quickview.classList.remove('is-active');
+                        });
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
